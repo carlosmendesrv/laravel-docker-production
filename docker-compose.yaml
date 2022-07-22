@@ -17,6 +17,8 @@ services:
       dockerfile: Dockerfile.prod
     image: carlosmendesrv/nginx:prod
     container_name: nginx
+    volumes:
+      - .:/var/www/html
     networks: 
       - laranet
     ports: 
